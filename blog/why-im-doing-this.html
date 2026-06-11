@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why I'm doing this — Tareq Alsheryani</title>
+<style>
+  body {
+    font-family: -apple-system, system-ui, sans-serif;
+    max-width: 640px;
+    margin: 60px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #222;
+  }
+  h1 { margin-bottom: 0; }
+  .sub { color: #666; margin-top: 4px; margin-bottom: 40px; }
+  a { color: #0066cc; }
+  .back { display: inline-block; margin-bottom: 30px; }
+</style>
+</head>
+<body>
+  <a href="/" class="back">← Home</a>
+  <h1>Why I'm doing this</h1>
+  <p class="sub">June 2026</p>
+
+  <p>I'm an aerospace student in the UAE. Right now I can't make a drone hold a steady hover on its own. By the end of this summer, I want to. That's the whole bet.</p>
+
+  <p>I've started where the math is honest: I derived the equations of motion for an inverted pendulum cart by hand, and I'm building the simulation in Python from the ground up - my own integrator, my own controllers, no black boxes I don't understand.</p>
+
+  <p>Four projects, escalating:</p>
+  <ol>
+    <li>The pendulum sim - PID, then LQR, then a Kalman filter on noisy sensor data. Learn control where it's safe to be wrong.</li>
+    <li>A quaternion attitude estimator running on an STM32, fusing a real IMU and magnetometer in real time. Learn estimation on real silicon.</li>
+    <li>My own flight controller firmware on a Teensy - attitude loops, motor mixing — bench-tested on a stand before anything spins near my face.</li>
+    <li>An autonomous quadcopter that holds position and flies a waypoint mission indoors, in simulation first, then in the air.</li>
+  </ol>
+  <p>If all four work, the hover is solved as a side effect.</p>
+
+  <p>Why this and not the thing everyone's chasing - I want to write code that turns into motion in the physical world. A control loop either keeps the aircraft up or it doesn't; reality grades the work, not a benchmark. That feedback is the part I can't get enough of.</p>
+
+  <p>It's also not abstract for me. 2026 made it concrete - the UAE got caught in the crossfire and held. I want to be in the systems layer that keeps it that way. GNC, avionics, control - that's where I think a single competent person has the most leverage, and it's where I'm pointing everything I have.</p>
+
+  <p>I'm writing this down for three reasons. Writing it forces me to actually understand it instead of pretending to. Future me will want the receipts - the failures logged, dated, honest. And I'm self-taught on most of this, so I want it out in the open where someone who knows more than me can tell me exactly where I'm wrong or point out my blind spots.</p>
+
+  <p>So: this is where I am, where I'm going, and the public record starts now.</p>
+</body>
+</html>
